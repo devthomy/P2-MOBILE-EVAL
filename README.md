@@ -105,12 +105,14 @@ AppNavGraph(
 )
 ```
 
-## Dépendances
+## 🚀 Installation
 
-- AndroidX Compose
-- Navigation Compose
-- Coil
-- ViewModel
+Suivez ces étapes pour exécuter l'application localement :
+
+1. Clonez ce dépôt :
+   ```bash
+   git clone https://github.com/votre-repo/pokemon-explorer.git
+
 
 🎉 Merci d'utiliser Pokémon Explorer ! Amusez-vous bien avec vos Pokémon ! 🚀
 
