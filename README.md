@@ -1,100 +1,117 @@
-# Pokémon Application
+# Application Pokémon
 
-## Overview
+## Vue d'ensemble
 
-This is a Kotlin-based Android application built using Jetpack Compose for displaying and exploring Pokémon data. The app provides a list of Pokémon and detailed information about individual Pokémon.
+Il s'agit d'une application Android développée avec Kotlin et Jetpack Compose, permettant d'afficher et d'explorer les données des Pokémons.
+L'application propose une liste des Pokémons ainsi que des informations détaillées sur chacun d'entre eux.
 
-## Features
+## Fonctionnalités
 
-- 🌓 Dark/Light Theme Toggle
-- 🌍 Multilingual Support (French/English)
-- 📱 Modern UI with Material Design 3
-- 🔍 Pokémon List Screen
-- 📊 Pokémon Detail Screen
+- 🌓 Basculement entre thème Clair/Sombre
+- 🌍 Prise en charge de plusieurs langues (Français/Anglais)
+- 📱 Vibration et effet sonore
+- 🔍 Écran de liste des Pokémons
+- 📊 Écran de détails d'un Pokémon
 
-## Technologies Used
+## Technologies utilisées
 
 - Kotlin
 - Jetpack Compose
 - Navigation Component
 - ViewModel
-- Coil for Image Loading
+- Coil pour le chargement d'images
 
-## Project Structure
+## Structure du projet
 
 ```
 com.example.p2_api_eval
 │
+├── data
+│   ├── datasources
+│   │   └── MockPokemon.kt
+│   └── repositories
+│       └── PokemonRepository.kt
+│
+├── domain
+│   ├── models
+│   │   └── Pokemon.kt
+│   └── repositories
+│
 ├── ui
+│   ├── composable
+│   │   └── PokemonCard.kt
 │   ├── navigation
-│   │   └── AppNavGraph.kt        # App navigation logic
+│   │   └── AppNavGraph.kt
 │   ├── screens
 │   │   ├── PokemonList
 │   │   │   ├── PokemonListScreen.kt
-│   │   │   └── PokemonViewModel.kt
+│   │   │   └── PokemonListViewModel.kt
 │   │   └── PokemonDetail
 │   │       ├── PokemonDetailScreen.kt
 │   │       └── PokemonDetailViewModel.kt
-│   ├── components
-│   │   └── PokemonCard.kt
 │   └── theme
-│       └── AppTheme.kt
+│       ├── Color.kt
+│       ├── Theme.kt
+│       └── Type.kt
 │
-└── MainActivity.kt
+├── utils
+├── MainActivity.kt
+└── res
+    ├── drawable
+    ├── mipmap
+    ├── raw
+    │   └── bip_sound.mp3
+    └── values
+        ├── colors.xml
+        ├── strings.xml
+        └── themes.xml
 ```
 
-## Language Support
+## Prise en charge des langues
 
-The application supports two languages:
-- 🇫🇷 French (default)
-- 🇬🇧 English
+L'application prend en charge deux langues :
+- 🇫🇷 Français (par défaut)
+- 🇬🇧 Anglais
 
-Language can be set in `MainActivity` or automatically detected from device settings.
+La langue peut être définie dans `MainActivity` ou détectée automatiquement à partir des paramètres de l'appareil.
 
-## Theme Management
+## Gestion des thèmes
 
-- Dark and Light themes are supported
-- Theme can be toggled with a button in the app bar
-- Default is set to Dark theme
+- Les thèmes Clair et Sombre sont pris en charge
+- Le thème peut être basculé à l'aide d'un bouton dans la barre d'application
+- Le thème par défaut est le thème Sombre
 
 ## Installation
 
-1. Clone the repository
-2. Open in Android Studio
-3. Sync Gradle files
-4. Run on an Android device or emulator
+1. Clonez le dépôt
+2. Ouvrez le projet dans Android Studio
+3. Synchronisez les fichiers Gradle
+4. Exécutez l'application sur un appareil Android ou un émulateur
 
 ## Configuration
 
-To change the default language, modify the `language` parameter in `MainActivity`:
+Pour modifier la langue par défaut, modifiez le paramètre `language` dans `MainActivity` :
 
 ```kotlin
 AppNavGraph(
     navController = navController, 
-    onToggleTheme = { /* theme toggle logic */ },
-    language = "fr"  // Change to "en" for English
+    onToggleTheme = { /* logique de basculement du thème */ },
+    language = "fr"  // Modifiez en "en" pour l'anglais
 )
 ```
 
-## Dependencies
+## Dépendances
 
 - AndroidX Compose
 - Navigation Compose
 - Coil
 - ViewModel
 
-## Contributing
+## Contribuer
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+1. Forkez le dépôt
+2. Créez votre branche de fonctionnalité
+3. Validez vos modifications
+4. Poussez les modifications sur la branche
+5. Créez une pull request
 
-## License
-
-[Your License Here]
-
-## Contact
-
-[Your Contact Information]
