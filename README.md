@@ -86,13 +86,6 @@ La langue peut être définie dans `MainActivity` ou détectée automatiquement 
 - Le thème peut être basculé à l'aide d'un bouton dans la barre d'application
 - Le thème par défaut est le thème Sombre
 
-## Installation
-
-1. Clonez le dépôt
-2. Ouvrez le projet dans Android Studio
-3. Synchronisez les fichiers Gradle
-4. Exécutez l'application sur un appareil Android ou un émulateur
-
 ## Configuration
 
 Pour modifier la langue par défaut, modifiez le paramètre `language` dans `MainActivity` :
