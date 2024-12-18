@@ -107,11 +107,9 @@ AppNavGraph(
 - Coil
 - ViewModel
 
-## Contribuer
+🎉 Merci d'utiliser Pokémon Explorer ! Amusez-vous bien avec vos Pokémon ! 🚀
 
-1. Forkez le dépôt
-2. Créez votre branche de fonctionnalité
-3. Validez vos modifications
-4. Poussez les modifications sur la branche
-5. Créez une pull request
+
+
+
 
