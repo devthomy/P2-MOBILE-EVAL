@@ -54,8 +54,6 @@ dependencies {
     //icon
     implementation(libs.androidx.material.icons.extended)
 
-    implementation(libs.coil.compose.v210)
-
     implementation(libs.coil.compose.v240)
 
     implementation(libs.ui)

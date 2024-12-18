@@ -10,7 +10,6 @@
     <string name="resistances_title_en">Resistances</string>
     <string name="evolutions_title_en">Evolutions</string>
 
-    <!-- French Strings -->
     <string name="pokemon_details_title_fr">Détails du Pokémon</string>
     <string name="no_pokemon_found_fr">Aucun Pokémon trouvé : id %d</string>
     <string name="change_theme_fr">Changer le thème</string>

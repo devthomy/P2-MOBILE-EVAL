@@ -1,5 +1,6 @@
 package com.example.p2_api_eval.ui.screens.PokemonDetail
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -10,10 +11,14 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import coil.compose.AsyncImage
+import coil.compose.rememberAsyncImagePainter
 import com.example.p2_api_eval.R
 import java.util.Locale
 
@@ -22,8 +27,7 @@ import java.util.Locale
  * @param navController gere la navigation
  * @param onToggleTheme gere le theme
  * affiche les details lie au pokemon selectionner via son id
- */
-@OptIn(ExperimentalMaterial3Api::class)
+ */@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PokemonDetailScreen(
     pokemonId: Int,
@@ -126,6 +130,23 @@ fun PokemonDetailScreen(
                     .padding(16.dp)
             ) {
                 item {
+                    // Pokemon Image
+                    //Image(
+                    //    painter = rememberAsyncImagePainter(model = pokemon.image),
+                    //    contentDescription = "${pokemon.name} image",
+                    //    modifier = Modifier
+                    //        .fillMaxWidth()
+                    //        .height(200.dp),
+                    //    contentScale = ContentScale.Fit
+                    //)
+
+                    //AsyncImage(
+                    //    model = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+                    //    contentDescription = null,
+                    //    modifier = Modifier.size(200.dp)
+                    //)
+
+
                     Text(
                         text = pokemon.name,
                         style = MaterialTheme.typography.headlineMedium,
