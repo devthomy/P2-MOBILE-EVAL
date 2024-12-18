@@ -112,7 +112,13 @@ Suivez ces étapes pour exécuter l'application localement :
 1. Clonez ce dépôt :
    ```bash
    git clone https://github.com/votre-repo/pokemon-explorer.git
+   ```
+   
+2. Ouvrez le projet dans Android Studio.
 
+3. Synchronisez les fichiers Gradle.
+
+4. Lancez l'application sur un émulateur ou un appareil Android réel.
 
 🎉 Merci d'utiliser Pokémon Explorer ! Amusez-vous bien avec vos Pokémon ! 🚀
 
