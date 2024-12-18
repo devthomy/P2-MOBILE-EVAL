@@ -21,6 +21,11 @@ L'application propose une liste des Pokémons ainsi que des informations détail
 - ViewModel
 - Coil pour le chargement d'images
 
+##  Api séléctioné
+
+Lien de l'api utilisé pour crée les données Mock :
+https://pokebuildapi.fr/api/v1
+
 ## Structure du projet
 
 ```
