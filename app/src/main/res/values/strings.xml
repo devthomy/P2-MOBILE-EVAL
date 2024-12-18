@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">P2-API-EVAL</string>
+
+    <string name="pokemon_details_title_en">Pokémon Details</string>
+    <string name="no_pokemon_found_en">No Pokémon found: id %d</string>
+    <string name="change_theme_en">Change theme</string>
+    <string name="back_en">Back</string>
+    <string name="basic_info_title_en">Basic Information</string>
+    <string name="stats_title_en">Statistics</string>
+    <string name="resistances_title_en">Resistances</string>
+    <string name="evolutions_title_en">Evolutions</string>
+
+    <!-- French Strings -->
+    <string name="pokemon_details_title_fr">Détails du Pokémon</string>
+    <string name="no_pokemon_found_fr">Aucun Pokémon trouvé : id %d</string>
+    <string name="change_theme_fr">Changer le thème</string>
+    <string name="back_fr">Retour</string>
+    <string name="basic_info_title_fr">Informations de base</string>
+    <string name="stats_title_fr">Statistiques</string>
+    <string name="resistances_title_fr">Résistances</string>
+    <string name="evolutions_title_fr">Évolutions</string>
+</resources>
